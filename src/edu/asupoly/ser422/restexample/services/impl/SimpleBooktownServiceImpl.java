@@ -17,6 +17,11 @@ public class SimpleBooktownServiceImpl extends ABooktownServiceImpl {
 	private final static String[] lnames = {"Bush", "Clinton", "Kennedy"};
 	private Set<Author> __authors = null;
 
+	@Override
+	public String createMsg(String path, String method, int status) {
+		return null;
+	}
+
 	public List<Author> getAuthors() {
 		List<Author> deepClone = new ArrayList<Author>();
 		for (Author a : __authors) {

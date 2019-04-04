@@ -8,6 +8,9 @@ import edu.asupoly.ser422.restexample.model.Subject;
 
 // we'll build on this later
 public interface BooktownService {
+    //JMS method
+    public String createMsg(String path, String method, int status);
+
 	// Author methods
     public List<Author> getAuthors();
     public Author getAuthor(int id);

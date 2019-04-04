@@ -2,6 +2,7 @@ package edu.asupoly.ser422.restexample.api;
 
 import java.util.List;
 
+import javax.servlet.ServletContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -20,6 +21,7 @@ import javax.ws.rs.core.UriInfo;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import edu.asupoly.ser422.restexample.model.Author;
+import edu.asupoly.ser422.restexample.services.msging.QProducer;
 import edu.asupoly.ser422.restexample.services.BooktownService;
 import edu.asupoly.ser422.restexample.services.BooktownServiceFactory;
 
@@ -27,11 +29,13 @@ import edu.asupoly.ser422.restexample.services.BooktownServiceFactory;
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_XML})
 public class AuthorResource {
 	private static BooktownService __bService = BooktownServiceFactory.getInstance();
-	
+	QProducer producer = new QProducer();
 	// Technique for location header taken from
 	// http://usna86-techbits.blogspot.com/2013/02/how-to-return-location-header-from.html
 	@Context
 	private UriInfo _uriInfo;
+	@Context
+	private ServletContext context;
 	
 	 /**
      * @apiDefine BadRequestError
@@ -67,6 +71,10 @@ public class AuthorResource {
      * */
 	@GET
 	public List<Author> getAuthors() {
+		String path = context.getContextPath();
+		int status = 200;
+		String msg = __bService.createMsg(path,"GET",status);
+		producer.produceMsgs(msg);
 		return __bService.getAuthors();
 	}
 

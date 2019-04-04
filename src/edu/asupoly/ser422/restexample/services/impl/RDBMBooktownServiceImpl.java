@@ -6,16 +6,13 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.List;
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 import edu.asupoly.ser422.restexample.model.Author;
 import edu.asupoly.ser422.restexample.model.Book;
 import edu.asupoly.ser422.restexample.model.Subject;
 import edu.asupoly.ser422.restexample.services.BooktownService;
-
-import java.util.Properties;
-import java.util.Random;
 
 //A simple impl of interface BooktownService
 public class RDBMBooktownServiceImpl extends ABooktownServiceImpl {
@@ -32,6 +29,16 @@ public class RDBMBooktownServiceImpl extends ABooktownServiceImpl {
 		} catch (Exception exc) {
 			throw exc;
 		}
+	}
+
+	public String createMsg(String path, String method, int status) {
+		String msg = "";
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		msg = timeStamp + "\n"
+				+ path + "\n"
+				+ method + "\n"
+				+ status + "\n";
+		return msg;
 	}
 
 	// Only instantiated by factory within package scope
