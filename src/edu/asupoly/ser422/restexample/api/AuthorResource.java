@@ -111,14 +111,21 @@ public class AuthorResource {
 	@Path("/{authorId}")
 	public Response getAuthor(@PathParam("authorId") int aid) {
 		Author author = __bService.getAuthor(aid);
-		
 		// AuthorSerializationHelper will build a slightly different JSON string and we still use
 		// the ResponseBuilder to use that. The key property names are changed in the result.
 		try {
+			String path = context.getContextPath();
+			int status = 200;
+			String msg = __bService.createMsg(path,"GET",status);
+			producer.produceMsgs(msg);
 			String aString = AuthorSerializationHelper.getHelper().generateJSON(author);
 			return Response.status(Response.Status.OK).entity(aString).build();
 		} catch (Exception exc) {
 			exc.printStackTrace();
+			String path = context.getContextPath();
+			int status = 404;
+			String msg = __bService.createMsg(path,"GET",status);
+			producer.produceMsgs(msg);
 			return null;
 		}
 	}
@@ -142,10 +149,22 @@ public class AuthorResource {
 		String[] names = name.split(" ");
 		int aid = __bService.createAuthor(names[0], names[1]);
 		if (aid == -1) {
+			String path = context.getContextPath();
+			int status = 500;
+			String msg = __bService.createMsg(path,"POST",status);
+			producer.produceMsgs(msg);
 			return Response.status(500).entity("{ \" EXCEPTION INSERTING INTO DATABASE! \"}").build();
 		} else if (aid == 0) {
+			String path = context.getContextPath();
+			int status = 500;
+			String msg = __bService.createMsg(path,"POST",status);
+			producer.produceMsgs(msg);
 			return Response.status(500).entity("{ \" ERROR INSERTING INTO DATABASE! \"}").build();
 		}
+		String path = context.getContextPath();
+		int status = 201;
+		String msg = __bService.createMsg(path,"POST",status);
+		producer.produceMsgs(msg);
 		return Response.status(201)
 				.header("Location", String.format("%s/%d",_uriInfo.getAbsolutePath().toString(), aid))
 				.entity("{ \"Author\" : \"" + aid + "\"}").build();
@@ -179,13 +198,25 @@ public class AuthorResource {
 			if (__bService.updateAuthor(a)) {
 				// In the response payload it would still use Jackson's default serializer,
 				// so we directly invoke our serializer so the PUT payload reflects what it should.
+				String path = context.getContextPath();
+				int status = 201;
+				String msg = __bService.createMsg(path,"PUT",status);
+				producer.produceMsgs(msg);
 				String aString = AuthorSerializationHelper.getHelper().generateJSON(a);
 				return Response.status(201).entity(aString).build();
 			} else {
+				String path = context.getContextPath();
+				int status = 404;
+				String msg = __bService.createMsg(path,"PUT",status);
+				producer.produceMsgs(msg);
 				return Response.status(404, "{ \"message \" : \"No such Author " + a.getAuthorId() + "\"}").build();
 			}
 		} catch (Exception exc) {
 			exc.printStackTrace();
+			String path = context.getContextPath();
+			int status = 500;
+			String msg = __bService.createMsg(path,"PUT",status);
+			producer.produceMsgs(msg);
 			return Response.status(500, "{ \"message \" : \"Internal server error deserializing Author JSON\"}").build();
 		}
     }
@@ -193,8 +224,16 @@ public class AuthorResource {
 	@DELETE
     public Response deleteAuthor(@QueryParam("id") int aid) {
 		if (__bService.deleteAuthor(aid)) {
+			String path = context.getContextPath();
+			int status = 204;
+			String msg = __bService.createMsg(path,"DELETE",status);
+			producer.produceMsgs(msg);
 			return Response.status(204).build();
 		} else {
+			String path = context.getContextPath();
+			int status = 404;
+			String msg = __bService.createMsg(path,"DELETE",status);
+			producer.produceMsgs(msg);
 			return Response.status(404, "{ \"message \" : \"No such Author " + aid + "\"}").build();
 		}
     }

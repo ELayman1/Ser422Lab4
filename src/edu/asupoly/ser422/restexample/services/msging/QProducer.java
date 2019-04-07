@@ -1,7 +1,7 @@
 package edu.asupoly.ser422.restexample.services.msging;
-/*
+
 import javax.jms.*;
-*/
+
 /**
    This simple producer pushes a single text message to a Queue. The Queue
    is command-line argument 0 and the text message is command-line argument 1.
@@ -10,12 +10,11 @@ import javax.jms.*;
 public class QProducer {
 
     public static void produceMsgs(String newMsg){
-	try {
-		/*
+    	try {
 	    Connection connection = JMSHelperActiveMQ.getJMSConnection();
 	    connection.start();
 	    Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-	    Destination destination = session.createQueue("lab4Queue");
+	    Destination destination = session.createQueue("lab4log");
  
 	    // Create a MessageProducer from the Session to the Topic or Queue
 	    MessageProducer producer = session.createProducer(destination);
@@ -26,10 +25,9 @@ public class QProducer {
 	
 	    session.close();
 	    connection.stop();
-	    connection.close();*/
-	} catch (Throwable tw) {
+	    connection.close();
+    	} catch (Throwable tw) {
 	    tw.printStackTrace();
-	}
-	//}
+		}
     }
 }
