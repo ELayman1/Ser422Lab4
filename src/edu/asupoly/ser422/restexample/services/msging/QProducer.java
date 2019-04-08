@@ -28,10 +28,8 @@ public class QProducer {
 			thread(new MsgProducer(),false);
 			System.out.println("Message Sent");
 		} catch (Exception e){
-			System.out.println("Exception 1");
 			e.printStackTrace();
 		} catch (Throwable tw){
-			System.out.println("Exception 2");
 			tw.printStackTrace();
 		}
 	}
