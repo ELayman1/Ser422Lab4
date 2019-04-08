@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="092e12df-e741-44f1-ad0b-aa8e74d7cf06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/impl/RDBMBooktownServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/impl/RDBMBooktownServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/impl/SimpleBooktownServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/impl/SimpleBooktownServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/msging/QProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/msging/QProducer.java" afterDir="false" />
-    </list>
+    <list default="true" id="092e12df-e741-44f1-ad0b-aa8e74d7cf06" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,8 +98,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getStore</find>
       <find>getContextPath</find>
+      <find>getStore</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,7 +195,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554749312799" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554749507181" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/RestExampleAPI.war" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -305,18 +301,17 @@
       <updated>1554405270105</updated>
       <workItem from="1554405273662" duration="2753000" />
       <workItem from="1554506639376" duration="6196000" />
-      <workItem from="1554672832538" duration="3097000" />
+      <workItem from="1554672832538" duration="3367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12046000" />
+    <option name="totallyTimeSpent" value="12316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="493" y="0" width="1050" height="830" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19090909" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19090909" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -341,7 +336,7 @@
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.11111111" />
+      <window_info active="true" anchor="right" id="Ant Build" order="1" visible="true" weight="0.11111111" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -462,17 +457,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/impl/RDBMBooktownServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/impl/SimpleBooktownServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/impl/RDBMBooktownServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
         </state>
       </provider>
     </entry>
