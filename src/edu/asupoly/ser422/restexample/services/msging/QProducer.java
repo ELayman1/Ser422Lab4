@@ -1,7 +1,6 @@
 package edu.asupoly.ser422.restexample.services.msging;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
-
 import javax.jms.*;
 
 /**
@@ -26,7 +25,7 @@ public class QProducer {
 	public void sendMessage(){
 		try{
 			thread(new MsgProducer(),false);
-			System.out.println("Message Sent");
+			System.out.println("Message Sent.");
 		} catch (Exception e){
 			e.printStackTrace();
 		} catch (Throwable tw){
