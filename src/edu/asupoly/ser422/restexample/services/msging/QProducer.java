@@ -12,8 +12,9 @@ import javax.jms.*;
 public class QProducer {
 
 	String newMsg = "";
-	public QProducer(String message){
-		newMsg=message;
+
+	public QProducer(String msg){
+		newMsg = msg;
 	}
 
 	public void thread(Runnable runnable, boolean daemon) {
@@ -24,7 +25,7 @@ public class QProducer {
 
 	public void sendMessage(){
 		try{
-			thread(new HelloWorldProducer(),false);
+			thread(new MsgProducer(),false);
 			System.out.println("Message Sent");
 		} catch (Exception e){
 			System.out.println("Exception 1");
@@ -35,7 +36,7 @@ public class QProducer {
 		}
 	}
 
-	public class HelloWorldProducer implements Runnable {
+	public class MsgProducer implements Runnable {
 		public void run() {
 			try {
 				// Create a ConnectionFactory
@@ -53,17 +54,13 @@ public class QProducer {
 
 				// Create a MessageProducer from the Session to the Topic or Queue
 				MessageProducer producer = session.createProducer(destination);
-				producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
+				producer.setDeliveryMode(DeliveryMode.PERSISTENT);
 
 				// Create a messages
-				String text = "Hello world! From: " + Thread.currentThread().getName() + " : " + this.hashCode();
-				//TextMessage message = session.createTextMessage(text);
 				TextMessage msg = session.createTextMessage(newMsg);
 
 				// Tell the producer to send the message
-				//System.out.println("Sent message: "+ message.hashCode() + " : " + Thread.currentThread().getName());
 				System.out.println("\nSent message:\n" + msg.getText() + "to queue lab4log.\n");
-				//producer.send(message);
 				producer.send(msg);
 
 				// Clean up
@@ -76,29 +73,4 @@ public class QProducer {
 			}
 		}
 	}
-	/*
-    public static class produceMsgs implements Runnable{
-    	try {
-	    //Connection connection = JMSHelperActiveMQ.getJMSConnection();
-	    ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:8161");
-	    Connection connection=connectionFactory.createConnection();
-	    connection.start();
-	    Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-	    Destination destination = session.createQueue("lab4log");
- 
-	    // Create a MessageProducer from the Session to the Topic or Queue
-	    MessageProducer producer = session.createProducer(destination);
-	    producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
-
-	    TextMessage msg = session.createTextMessage(newMsg);
-	    producer.send(msg);
-	    System.out.println("\nSent message:\n" + msg.getText() + "to queue lab4log.\n");
-	
-	    session.close();
-	  	//connection.stop();
-	    connection.close();
-    	} catch (Exception tw) {
-	    	tw.printStackTrace();
-		}
-    }*/
 }
