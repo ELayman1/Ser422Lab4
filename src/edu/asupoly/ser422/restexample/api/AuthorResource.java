@@ -30,7 +30,6 @@ import edu.asupoly.ser422.restexample.services.BooktownServiceFactory;
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_XML})
 public class AuthorResource {
 	private static BooktownService __bService = BooktownServiceFactory.getInstance();
-	QProducer producer = new QProducer();
 	// Technique for location header taken from
 	// http://usna86-techbits.blogspot.com/2013/02/how-to-return-location-header-from.html
 	@Context
@@ -76,7 +75,9 @@ public class AuthorResource {
 		URI path = _uriInfo.getAbsolutePath();
 		int status = 200;
 		String msg = __bService.createMsg(path,"GET",status);
-		producer.produceMsgs(msg);
+		QProducer qP = new QProducer(msg);
+		qP.sendMessage();
+		//producer.produceMsgs(msg);
 		return __bService.getAuthors();
 	}
 
@@ -120,7 +121,9 @@ public class AuthorResource {
 			URI path = _uriInfo.getAbsolutePath();
 			int status = 200;
 			String msg = __bService.createMsg(path,"GET",status);
-			producer.produceMsgs(msg);
+			QProducer qP = new QProducer(msg);
+			qP.sendMessage();
+			//producer.produceMsgs(msg);
 			String aString = AuthorSerializationHelper.getHelper().generateJSON(author);
 			return Response.status(Response.Status.OK).entity(aString).build();
 		} catch (Exception exc) {
@@ -129,7 +132,9 @@ public class AuthorResource {
 			URI path = _uriInfo.getAbsolutePath();
 			int status = 404;
 			String msg = __bService.createMsg(path,"GET",status);
-			producer.produceMsgs(msg);
+			QProducer qP = new QProducer(msg);
+			qP.sendMessage();
+			//producer.produceMsgs(msg);
 			return null;
 		}
 	}
@@ -157,21 +162,27 @@ public class AuthorResource {
 			URI path = _uriInfo.getAbsolutePath();
 			int status = 500;
 			String msg = __bService.createMsg(path,"POST",status);
-			producer.produceMsgs(msg);
+			QProducer qP = new QProducer(msg);
+			qP.sendMessage();
+			//producer.produceMsgs(msg);
 			return Response.status(500).entity("{ \" EXCEPTION INSERTING INTO DATABASE! \"}").build();
 		} else if (aid == 0) {
 			//String path = context.getContextPath();
 			URI path = _uriInfo.getAbsolutePath();
 			int status = 500;
 			String msg = __bService.createMsg(path,"POST",status);
-			producer.produceMsgs(msg);
+			QProducer qP = new QProducer(msg);
+			qP.sendMessage();
+			//producer.produceMsgs(msg);
 			return Response.status(500).entity("{ \" ERROR INSERTING INTO DATABASE! \"}").build();
 		}
 		//String path = context.getContextPath();
 		URI path = _uriInfo.getAbsolutePath();
 		int status = 201;
 		String msg = __bService.createMsg(path,"POST",status);
-		producer.produceMsgs(msg);
+		QProducer qP = new QProducer(msg);
+		qP.sendMessage();
+		//producer.produceMsgs(msg);
 		return Response.status(201)
 				.header("Location", String.format("%s/%d",_uriInfo.getAbsolutePath().toString(), aid))
 				.entity("{ \"Author\" : \"" + aid + "\"}").build();
@@ -209,7 +220,9 @@ public class AuthorResource {
 				URI path = _uriInfo.getAbsolutePath();
 				int status = 201;
 				String msg = __bService.createMsg(path,"PUT",status);
-				producer.produceMsgs(msg);
+				QProducer qP = new QProducer(msg);
+				qP.sendMessage();
+				//producer.produceMsgs(msg);
 				String aString = AuthorSerializationHelper.getHelper().generateJSON(a);
 				return Response.status(201).entity(aString).build();
 			} else {
@@ -217,7 +230,9 @@ public class AuthorResource {
 				URI path = _uriInfo.getAbsolutePath();
 				int status = 404;
 				String msg = __bService.createMsg(path,"PUT",status);
-				producer.produceMsgs(msg);
+				QProducer qP = new QProducer(msg);
+				qP.sendMessage();
+				//producer.produceMsgs(msg);
 				return Response.status(404, "{ \"message \" : \"No such Author " + a.getAuthorId() + "\"}").build();
 			}
 		} catch (Exception exc) {
@@ -226,7 +241,9 @@ public class AuthorResource {
 			URI path = _uriInfo.getAbsolutePath();
 			int status = 500;
 			String msg = __bService.createMsg(path,"PUT",status);
-			producer.produceMsgs(msg);
+			QProducer qP = new QProducer(msg);
+			qP.sendMessage();
+			//producer.produceMsgs(msg);
 			return Response.status(500, "{ \"message \" : \"Internal server error deserializing Author JSON\"}").build();
 		}
     }
@@ -238,14 +255,18 @@ public class AuthorResource {
 			URI path = _uriInfo.getAbsolutePath();
 			int status = 204;
 			String msg = __bService.createMsg(path,"DELETE",status);
-			producer.produceMsgs(msg);
+			QProducer qP = new QProducer(msg);
+			qP.sendMessage();
+			//producer.produceMsgs(msg);
 			return Response.status(204).build();
 		} else {
 			//String path = context.getContextPath();
 			URI path = _uriInfo.getAbsolutePath();
 			int status = 404;
 			String msg = __bService.createMsg(path,"DELETE",status);
-			producer.produceMsgs(msg);
+			QProducer qP = new QProducer(msg);
+			qP.sendMessage();
+			//producer.produceMsgs(msg);
 			return Response.status(404, "{ \"message \" : \"No such Author " + aid + "\"}").build();
 		}
     }

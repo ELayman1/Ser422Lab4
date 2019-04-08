@@ -13,7 +13,7 @@ public class JMSHelperActiveMQ {
 
     public static Connection getJMSConnection() throws Exception {
         // Create a ConnectionFactory
-        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("vm://localhost");
+        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:8161");
         return connectionFactory.createConnection();
     }
 }
