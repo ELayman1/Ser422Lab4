@@ -10,18 +10,19 @@ Author: Kevin Gary and Elizabeth Layman
 //----------------------------------------------------------------------------------------------//
 Prepping to Run Project
 //----------------------------------------------------------------------------------------------//
-Setting Up to Run Simple Booktown
-
-
-Setting Up Database(In MySQL Workbench):
+(Optional)Setting Up Database(In MySQL Workbench):
     1.    Open database workbench.
     2.    Drop mysql_phonebook.sql in query.
     3.    Press lightning bolt to execute.
     4.    Refresh schema in bench to make sure it was added.
 
-Setting Up Ivy(Ignore):
-    In CLI:
-    1.    ant init-ivy
+Running Producer in Project:
+    1. Change build.properties
+        a. tomcat_webapps = [Your tomcat_webapps directory path.]
+        b. asurite = [Your asurite or username]
+
+Running Consumer:
+    1. (In CLI): javac Lab4Consumer.java
 
 //----------------------------------------------------------------------------------------------//
 Booktown API Doc
