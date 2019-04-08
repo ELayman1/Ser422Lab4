@@ -8,67 +8,18 @@ Due Date: 4/7/19
 Author: Kevin Gary and Elizabeth Layman
 
 //----------------------------------------------------------------------------------------------//
-Dependencies
-//----------------------------------------------------------------------------------------------//
-    1.    Organization: "mysql"
-          Name: "mysql-connector-java"
-          Version: "8.0.15"
-          Link: "https://mvnrepository.com/artifact/mysql/mysql-connector-java"
-
-    2.    Organization: "javax.servlet"
-          Name: "javax.servlet-api"
-          Version: "3.0.1"
-          Link: "https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api"
-
-    3.    Organization: "org.glassfish.jersey.bundles"
-          Name: "jaxrs-ri"
-          Version: "2.26"
-          Link: "https://mvnrepository.com/artifact/org.glassfish.jersey.bundles/jaxrs-ri"
-
-    4.    Organization: "org.glassfish.hk2"
-          Name: "hk2"
-          Version: "2.5.0"
-          Link: "https://mvnrepository.com/artifact/org.glassfish.hk2/hk2"
-
-    5.    Organization: "org.glassfish.hk2"
-          Name: "hk2-locator"
-          Version: "2.5.0"
-          Link: "https://mvnrepository.com/artifact/org.glassfish.hk2/hk2-locator"
-
-    7.    Organization: "com.fasterxml.jackson.core"
-          Name: "jackson-core"
-          Version: "2.9.0"
-          Link: "https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core"
-
-    8.    Organization: "com.fasterxml.jackson.core"
-          Name: "jackson-annotations"
-          Version: "2.9.0"
-          Link: "https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations"
-
-    9.    Organization: "com.fasterxml.jackson.core"
-          Name: "jackson-databind"
-          Version: "2.9.0"
-          Link: "https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind"
-
-    10.    Organization: "javax.jms"
-           Name: "javax.jms-api"
-           Version: "2.0"
-           Link: "https://mvnrepository.com/artifact/javax.jms/javax.jms-api"
-
-    11.    Organization: "org.apache.activemq"
-           Name: "activemq-core"
-           Version: "5.7.0"
-           Link: "https://mvnrepository.com/artifact/org.apache.activemq/activemq-core"
-
-//----------------------------------------------------------------------------------------------//
 Prepping to Run Project
 //----------------------------------------------------------------------------------------------//
-Setting Up database(In MySQL Workbench):
+Setting Up to Run Simple Booktown
+
+
+Setting Up Database(In MySQL Workbench):
     1.    Open database workbench.
     2.    Drop mysql_phonebook.sql in query.
     3.    Press lightning bolt to execute.
     4.    Refresh schema in bench to make sure it was added.
-Setting Up Ivy:
+
+Setting Up Ivy(Ignore):
     In CLI:
     1.    ant init-ivy
 

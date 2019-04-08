@@ -1,5 +1,6 @@
 package edu.asupoly.ser422.restexample.services;
 
+import java.net.URI;
 import java.util.List;
 
 import edu.asupoly.ser422.restexample.model.Author;
@@ -9,7 +10,7 @@ import edu.asupoly.ser422.restexample.model.Subject;
 // we'll build on this later
 public interface BooktownService {
     //JMS method
-    public String createMsg(String path, String method, int status);
+    public String createMsg(URI path, String method, int status);
 
 	// Author methods
     public List<Author> getAuthors();

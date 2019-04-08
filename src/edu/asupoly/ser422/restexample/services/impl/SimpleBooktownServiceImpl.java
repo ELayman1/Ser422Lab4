@@ -1,5 +1,6 @@
 package edu.asupoly.ser422.restexample.services.impl;
 
+import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -15,14 +16,14 @@ public class SimpleBooktownServiceImpl extends ABooktownServiceImpl {
 	private final static String[] lnames = {"Bush", "Clinton", "Kennedy"};
 	private Set<Author> __authors = null;
 
-	public String createMsg(String path, String method, int status) {
+	public String createMsg(URI path, String method, int status) {
 		String msg = "";
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		msg = timeStamp + "\n"
 				+ path + "\n"
 				+ method + "\n"
 				+ status + "\n";
-		System.out.println("Message Created in Simple Booktown:" + msg);
+		System.out.println("\nMessage Created in Simple Booktown\n:" + msg);
 		return msg;
 	}
 
