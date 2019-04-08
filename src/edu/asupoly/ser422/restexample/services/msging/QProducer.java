@@ -22,7 +22,7 @@ public class QProducer {
 
 	    TextMessage msg = session.createTextMessage(newMsg);
 	    producer.send(msg);
-	    System.out.println("Sent message '" + msg.getText() + "' to queue lab4log.");
+	    System.out.println("Sent message: " + msg.getText() + " to queue lab4log.");
 	
 	    session.close();
 	    connection.stop();

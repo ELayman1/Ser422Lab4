@@ -38,6 +38,7 @@ public class RDBMBooktownServiceImpl extends ABooktownServiceImpl {
 				+ path + "\n"
 				+ method + "\n"
 				+ status + "\n";
+		System.out.println("Message Created in DB Booktown:" + msg);
 		return msg;
 	}
 

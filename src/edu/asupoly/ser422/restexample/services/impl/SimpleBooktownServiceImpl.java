@@ -22,6 +22,7 @@ public class SimpleBooktownServiceImpl extends ABooktownServiceImpl {
 				+ path + "\n"
 				+ method + "\n"
 				+ status + "\n";
+		System.out.println("Message Created in Simple Booktown:" + msg);
 		return msg;
 	}
 
