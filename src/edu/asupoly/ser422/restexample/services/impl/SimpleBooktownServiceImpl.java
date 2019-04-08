@@ -1,9 +1,7 @@
 package edu.asupoly.ser422.restexample.services.impl;
 
-import java.util.List;
-import java.util.Set;
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 import edu.asupoly.ser422.restexample.model.Author;
 import edu.asupoly.ser422.restexample.model.Book;
@@ -17,9 +15,14 @@ public class SimpleBooktownServiceImpl extends ABooktownServiceImpl {
 	private final static String[] lnames = {"Bush", "Clinton", "Kennedy"};
 	private Set<Author> __authors = null;
 
-	@Override
 	public String createMsg(String path, String method, int status) {
-		return null;
+		String msg = "";
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		msg = timeStamp + "\n"
+				+ path + "\n"
+				+ method + "\n"
+				+ status + "\n";
+		return msg;
 	}
 
 	public List<Author> getAuthors() {
