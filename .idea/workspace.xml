@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="092e12df-e741-44f1-ad0b-aa8e74d7cf06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestExampleAPI.war" beforeDir="false" afterPath="$PROJECT_DIR$/RestExampleAPI.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestExampleAPI/apidocs/api_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/RestExampleAPI/apidocs/api_project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestExampleAPI/apidocs/api_project.json" beforeDir="false" afterPath="$PROJECT_DIR$/RestExampleAPI/apidocs/api_project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apidocs/api_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/api_project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apidocs/api_project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/api_project.json" afterDir="false" />
-    </list>
+    <list default="true" id="092e12df-e741-44f1-ad0b-aa8e74d7cf06" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -293,15 +286,15 @@
       <workItem from="1554405273662" duration="2753000" />
       <workItem from="1554506639376" duration="6196000" />
       <workItem from="1554672832538" duration="14429000" />
-      <workItem from="1554832340456" duration="2344000" />
+      <workItem from="1554832340456" duration="2943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25722000" />
+    <option name="totallyTimeSpent" value="26321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09798658" />
