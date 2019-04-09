@@ -22,7 +22,8 @@ Running Producer in Project:
         b. asurite = [Your asurite or username]
 
 Running Consumer:
-    1. (In CLI): javac Lab4Consumer.java
+    1. (In CLI): javac -cp activemq-all-5.15.9.jar Lab4Consumer.java
+    2. (In CLI): java -cp .;activemq-all-5.3.2.jar Consumer
 
 //----------------------------------------------------------------------------------------------//
 Booktown API Doc
