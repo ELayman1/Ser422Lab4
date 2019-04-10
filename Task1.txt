@@ -1,0 +1,32 @@
+Lab 4 Activity 1
+
+//Run answers below at: https://api.digitransit.fi/graphiql/hsl?
+
+//The gtfsId, shortName, longName, mode and stops for BUS routes starting with “588”
+{
+  routes(name: "588", transportModes: BUS) {
+    gtfsId
+    shortName
+    longName
+    mode
+    stops{ id }
+  }
+}
+
+//Find all stops within a 300m radius of the first route, 3rd stop latitude/longitude values of the result to #1
+{
+  stopsByRadius(lat:60.26263,lon:25.116406,radius:300) {
+    edges {
+      node {
+        stop {
+          gtfsId
+          name
+        }
+        distance
+      }
+    }
+  }
+}
+
+//Find all of the GeoCoding information for the stops named in your answer to #2 (Note: this will require you to use the RESTful GeoCoding API)
+https://api.digitransit.fi/geocoding/v1/reverse?point.lat=60.26263&point.lon=25.116406&boundary.circle.radius=300

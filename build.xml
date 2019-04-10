@@ -32,19 +32,16 @@
     </target>
 
     <target name="build" depends="compile,apidoc">
-        <copy file="web.xml" todir="${destdir}/WEB-INF"/>
+        <copy file="README.txt" todir="${destdir}"/>
         <copy todir="${destdir}/${apidocdir}">
             <fileset dir="${apidocdir}"/>
         </copy>
+        <copy todir="${destdir}/consumer">
+            <fileset dir="consumer"/>
+        </copy>
+        <copy file="web.xml" todir="${destdir}/WEB-INF"/>
         <war destfile="${warfile}" basedir="${destdir}" needxmlfile="false"/>
     </target>
-
-    <!--   <target name="apidoc">
-      <mkdir dir="${apidocdir}"/>
-        <exec dir="." executable="apidoc">
-          <arg line="-i ./${srcdir} -o ./${apidocdir}"/>
-        </exec>
-      </target> -->
 
     <target name="apidoc" depends="OS-WIN,OS-MAC-UNIX">
         <mkdir dir="${apidocdir}"/>

@@ -10,20 +10,30 @@ Author: Kevin Gary and Elizabeth Layman
 //----------------------------------------------------------------------------------------------//
 Prepping to Run Project
 //----------------------------------------------------------------------------------------------//
-(Optional)Setting Up Database(In MySQL Workbench):
+
+//---Task1---//
+Run answers in Task1.txt at: https://api.digitransit.fi/graphiql/hsl?
+
+//---Task2---//
+Setting Up Database
+    In MySQL Workbench:
     1.    Open database workbench.
     2.    Drop mysql_phonebook.sql in query.
     3.    Press lightning bolt to execute.
     4.    Refresh schema in bench to make sure it was added.
-
+    In Project:
+    1.    Open rdbm.properties.
+    2.    Change jdbcURL, jdbcUser, jdbcPasswd according to your database.
 Running Producer in Project:
     1. Change build.properties
         a. tomcat_webapps = [Your tomcat_webapps directory path.]
         b. asurite = [Your asurite or username]
-
 Running Consumer:
-    1. (In CLI): javac -cp activemq-all-5.15.9.jar Lab4Consumer.java
-    2. (In CLI): java -cp .;activemq-all-5.3.2.jar Consumer
+    1. Navigate to consumer folder in unzipped folder (Should already be compiled.).
+    2. (In CLI (If Needed)): javac -cp activemq-all-5.15.9.jar Lab4Consumer.java
+    3. (In CLI): java -cp .;activemq-all-5.15.9.jar Lab4Consumer
+
+//---Task3---//
 
 //----------------------------------------------------------------------------------------------//
 Booktown API Doc
