@@ -25,16 +25,19 @@ Setting Up Database
     1.    Open rdbm.properties.
     2.    Change jdbcURL, jdbcUser, jdbcPasswd according to your database.
 Running Producer in Project:
-    1. Change build.properties
-        a. tomcat_webapps = [Your tomcat_webapps directory path.]
-        b. asurite = [Your asurite or username]
+    1.    Change build.properties
+              a. tomcat_webapps = [Your tomcat_webapps directory path.]
+              b. asurite = [Your asurite or username]
 Running Consumer:
-    1. Navigate to consumer folder in unzipped folder (Should already be compiled.).
-    2. (In CLI (If Needed)): javac -cp activemq-all-5.15.9.jar Lab4Consumer.java
-    3. (In CLI): java -cp .;activemq-all-5.15.9.jar Lab4Consumer
+    1.    Navigate to consumer folder in unzipped folder (Should already be compiled.).
+    2.    (In CLI (If Needed)): javac -cp activemq-all-5.15.9.jar Lab4Consumer.java
+    3.    (In CLI): java -cp .;activemq-all-5.15.9.jar Lab4Consumer
 
 //---Task3---//
-
+Running Docker
+    1.    Navigate to docker directory(Should be in highest level).
+    2.    (In CLI): docker build .
+    3.    (In CLI): docker container run -p 8080:8080 -p 8081:8081 <ContainerID>
 //----------------------------------------------------------------------------------------------//
 Booktown API Doc
 //----------------------------------------------------------------------------------------------//

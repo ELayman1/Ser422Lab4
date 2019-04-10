@@ -2,18 +2,114 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="092e12df-e741-44f1-ad0b-aa8e74d7cf06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/Lab4Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/Lab4Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/Lab4Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/Lab4Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/activemq-all-5.15.9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/activemq-all-5.15.9.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestExampleAPI.war" beforeDir="false" afterPath="$PROJECT_DIR$/RestExampleAPI.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestExampleAPI/apidocs/api_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/RestExampleAPI/apidocs/api_project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestExampleAPI/apidocs/api_project.json" beforeDir="false" afterPath="$PROJECT_DIR$/RestExampleAPI/apidocs/api_project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apidocs/api_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/api_project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apidocs/api_project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/api_project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/api_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/api_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/api_project.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/api_project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/locale.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/pt_br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/locales/zh_cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/utils/handlebars_helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/utils/send_sample_request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/diff_match_patch.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/handlebars.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/list.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/lodash.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/path-to-regexp/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/path-to-regexp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-Splus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-aea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-agc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-apollo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-cbm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-cl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-clj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-erl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-erlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-fs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-go.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-hs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-lasso.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-lassoscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-latex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-lgt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-lisp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-ll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-llvm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-logtalk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-ls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-lsp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-lua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-matlab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-ml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-mumps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-nemerle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-pascal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-proto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-r.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-rd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-rkt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-rust.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-s.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-scala.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-scm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-sql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-ss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-swift.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-tcl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-tex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-vb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-vbs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-vhd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-vhdl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-wiki.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-xq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-xquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-yaml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/lang-yml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/prettify/run_prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/require.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/semver.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/vendor/webfontloader.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,19 +160,19 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="232">
+              <caret line="32" column="64" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
+            <state relative-caret-position="514">
               <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
             </state>
           </provider>
@@ -142,8 +238,8 @@
         <option value="$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/api/AuthorResource.java" />
         <option value="$PROJECT_DIR$/src/edu/asupoly/ser422/restexample/services/msging/QProducer.java" />
         <option value="$PROJECT_DIR$/Task1.txt" />
-        <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -155,9 +251,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="862" />
+    <option name="y" value="71" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -173,6 +270,11 @@
               <item name="Ser422Lab4" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ser422Lab4" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Ser422Lab4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ser422Lab4" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -182,7 +284,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554867404145" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554876348778" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -291,17 +393,18 @@
       <workItem from="1554672832538" duration="14429000" />
       <workItem from="1554832340456" duration="2959000" />
       <workItem from="1554862459084" duration="4151000" />
-      <workItem from="1554867467417" duration="414000" />
+      <workItem from="1554867467417" duration="5664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30902000" />
+    <option name="totallyTimeSpent" value="36152000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <frame x="862" y="71" width="978" height="1039" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24549237" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19281046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -319,14 +422,14 @@
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49671772" weight="0.15754923" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5034674" side_tool="true" visible="true" weight="0.32664755" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4965326" visible="true" weight="0.32664755" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.503268" side_tool="true" visible="true" weight="0.25165564" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49673203" visible="true" weight="0.25165564" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.18307906" />
+      <window_info anchor="right" id="Ant Build" order="1" visible="true" weight="0.14379086" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -437,13 +540,6 @@
     <entry file="file://$PROJECT_DIR$/properties/rdbm.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -473,8 +569,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
+        <state relative-caret-position="514">
           <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="65" />
         </state>
       </provider>
     </entry>
